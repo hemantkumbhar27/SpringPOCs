@@ -1,0 +1,19 @@
+login- user
+curl --location 'http://localhost:8080/login' \
+--header 'Cookie: JSESSIONID=04CF178382D13ED5AB31520B98968AC8' \
+--form 'username="user"' \
+--form 'password="user"'
+
+user API
+curl --location --request GET 'http://localhost:8080/user' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Cookie: JSESSIONID=69B4E9BF5CD527AE04B1FCE391864ABA' \
+--data-urlencode 'username=user' \
+--data-urlencode 'password=user'
+
+admin API
+curl --location --request GET 'http://localhost:8080/admin' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--header 'Cookie: JSESSIONID=D2235291A4AE1E85857DD67E6C719FD2' \
+--data-urlencode 'username=admin' \
+--data-urlencode 'password=admin'
